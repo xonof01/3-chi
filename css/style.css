@@ -1,0 +1,269 @@
+/* epilogue-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Epilogue", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/epilogue-v17-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* epilogue-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Epilogue", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/epilogue-v17-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* epilogue-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Epilogue", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/epilogue-v17-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+*,
+*::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 2px dashed #00bafc;
+  outline-offset: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  background-color: #fafafa;
+}
+
+img {
+  object-fit: cover;
+  display: flex;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1 {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 21px;
+}
+
+.sitenav {
+  display: flex;
+  gap: 62px;
+}
+
+.sitenav__list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.sitenav__item-link {
+  padding-bottom: 30px;
+}
+
+.sitenav__item-link-img {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+
+.sitenav__item {
+  font-family: "Epilogue", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #686868;
+}
+
+.header__btn {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header__btn-link {
+  width: 104px;
+  border: 2px solid #686868;
+  border-radius: 16px;
+  padding: 13px 23px;
+  text-align: center;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.feature:hover .feature__inner {
+  visibility: visible;
+  opacity: 100%;
+}
+
+.feature__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.feature__inner {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background-color: #fff;
+  box-shadow: 0px 10px 40px 0px #00000026;
+  border-radius: 12px;
+  gap: 16px;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 30px;
+  right: 1px;
+}
+
+.feature__inner-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.company:hover .company__inner {
+  visibility: visible;
+  opacity: 100%;
+}
+
+.company__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.company__inner {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background-color: #fff;
+  box-shadow: 0px 10px 40px 0px #00000026;
+  border-radius: 12px;
+  width: 116px;
+  gap: 16px;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 30px;
+}
+.company__inner-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.company__inner-link {
+  color: #686868;
+}
+.feature__inner-link {
+  color: #686868;
+}
+
+.main {
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 125px;
+  margin-top: 67px;
+  margin-left: 50px;
+  margin-bottom: 122px;
+}
+.wrapper__texts {
+  width: 540px;
+  height: 400px;
+  margin-bottom: 108px;
+  margin-top: 140px;
+}
+.wrapper__text-description {
+  width: 445px;
+  font-family: "Epilogue", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  margin-bottom: 51px;
+}
+.wrapper__text-title {
+  font-family: "Epilogue", sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 80px;
+  text-align: left;
+  margin-bottom: 48px;
+}
+.wrapper__text-btn {
+  font-family: "Epilogue", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  padding: 15px 28px 13px 31px;
+  background-color: #151515;
+  color: #fafafa;
+  border-radius: 12px;
+
+  &:hover {
+    background-color: #fff;
+    color: #151515;
+    border: 2px solid #151515;
+  }
+}
+.wrapper__images {
+  display: flex;
+  width: 478px;
+  justify-content: space-between;
+}
+.wrapper__images-src {
+}
+.wrapper__img {
+}
